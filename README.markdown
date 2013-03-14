@@ -6,7 +6,7 @@ Just type
 
     :InteractiveReplace
 
-at the Vim console, or press the shortcut binding in normal mode:
+at the Vim console, or type the shortcut binding in normal mode:
 
      <leader>r
 
@@ -21,7 +21,7 @@ Optionally, to configure a different key binding, add this line to your *.vimrc*
 
     let g:InteractiveReplace_map = 'X'
 
-where *X* is something like <F5> or \i
+where *X* is something like &lt;F5&gt; or \i
 
 ## Examples
 
@@ -32,7 +32,7 @@ With a search performed (e.g. `/Bel-air`), type `\r` to bring up InteractiveRepl
 #### Easy consecutive substitutions
 ![InteractiveReplace](http://www.planetharold.com/projects/interactive-replace/interactive-replace-1.png)
 
-* * *
+----------------
 
 In a programming context, you can easily substitute variable names stemming from one `o`pened line.
 
@@ -49,14 +49,11 @@ Now use InteractiveReplace on `/tmp` to sequentially replace variable names:
 ![InteractiveReplace](http://www.planetharold.com/projects/interactive-replace/interactive-replace-3.png)
 ## F.A.Q.
 * How do I install Pathogen?
-     * Just put [pathogen.vim] into your ~/.vim/autoload folder. Then put these two lines in your *.vimrc* file:
-
-     filetype plugin indent on
-     execute pathogen#infect()
-
+     * Just put [pathogen.vim] into your ~/.vim/autoload folder. Then put these two lines in your *.vimrc* file: 
+        * filetype plugin indent on
+        * execute pathogen#infect()
 * How do I install InteractiveReplace without using Pathogen?
      * If you wanna be really dirty about it, download the [zipball] and extract the contents to your Vim directory.
-
 * How do I update InteractiveReplace?
     * The beauty of installing with Pathogen is that you `cd` into `~/.vim/bundle/interactive-replace/` and type `$ git pull` to get the latest updates.
 
