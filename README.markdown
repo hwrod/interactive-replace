@@ -47,6 +47,8 @@ to get:
 Now use InteractiveReplace on `/tmp` to sequentially replace variable names:
 
 ![InteractiveReplace](http://www.planetharold.com/projects/interactive-replace/interactive-replace-3.png)
+
+In this way, Interactive-Replace works like a block-select that lets you choose replacement text for each line.
 ## F.A.Q.
 * How do I install Pathogen?
      * Just put [pathogen.vim] into your ~/.vim/autoload folder. Then put these two lines in your *.vimrc* file: 
