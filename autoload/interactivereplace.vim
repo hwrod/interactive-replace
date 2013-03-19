@@ -1,4 +1,4 @@
-fun! InteractiveReplace#InteractiveReplace()
+fun! interactivereplace#InteractiveReplace()
   call s:GlobalInteractiveReplace()
 endfun
 

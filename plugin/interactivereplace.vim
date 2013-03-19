@@ -17,4 +17,4 @@ if !exists('g:InteractiveReplace_map')
 endif
 
 exe "nnoremap"  g:InteractiveReplace_map  ":InteractiveReplace<CR>"
-command! InteractiveReplace call InteractiveReplace#InteractiveReplace()
+command! InteractiveReplace call interactivereplace#InteractiveReplace()
