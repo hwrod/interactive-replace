@@ -10,7 +10,7 @@ at the Vim console, or type the shortcut binding in normal mode:
 
      <leader>r
 
-(on my system that's `\r`).
+(on my system that's `\r`). While searching; to skip the current term, press enter without a replace term, and to abort press Ctrl-c.
 
 ## Install
 Assuming you have [Git] and [Pathogen] installed, which you should, just run:
@@ -22,6 +22,11 @@ Optionally, to configure a different key binding, add this line to your *.vimrc*
     let g:InteractiveReplace_map = 'X'
 
 where *X* is something like &lt;F5&gt; or \i
+
+To set the highlighting for the search term, define the highlight group
+`IntSearchHL` in your .vimrc file. Ex.: (the default)
+
+     hi IntSearchHL ctermbg=blue guibg=blue
 
 ## Examples
 
@@ -63,9 +68,7 @@ In this way, Interactive-Replace works like a block-select that lets you choose 
 
 There are a few ways InteractiveReplace can be improved, including:
 
-* allowing `Enter` to skip replace (make no change)
 * highlighting the current search term in a different color
-* if nothing's in the `/` register, ask user for a search term
 
 Pull requests are highly encouraged. Questions/comments [welcome] too.
 
