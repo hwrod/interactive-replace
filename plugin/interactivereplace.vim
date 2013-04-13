@@ -16,5 +16,9 @@ if !exists('g:InteractiveReplace_map')
     let g:InteractiveReplace_map = '<leader>r'
 endif
 
+if !hlexists('IntSearchHL')
+    hi IntSearchHL ctermbg=blue guibg=blue
+endif
+
 exe "nnoremap"  g:InteractiveReplace_map  ":InteractiveReplace<CR>"
 command! InteractiveReplace call interactivereplace#InteractiveReplace()
