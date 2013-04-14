@@ -11,7 +11,7 @@ fun! s:GlobalInteractiveReplace()
     execute "match IntSearchHL /" . term . "/"
     let save_view = winsaveview()
     let n = 0
-    while n < line("$")
+    while n <= line("$")
         let line = getline(n)
         let col = match(line,term,0)
         try
