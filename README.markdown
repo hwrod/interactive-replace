@@ -79,3 +79,7 @@ Pull requests are highly encouraged. Questions/comments [welcome] too.
 [Vim]:http://www.vim.org
 [Git]:http://git-scm.com
 [welcome]:mailto:harold@planetharold.com
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hwrod/interactive-replace/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
